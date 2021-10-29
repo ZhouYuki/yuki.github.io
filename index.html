@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta charset="UTF-8">
+<title>Rotation Game</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
-<body>
-	<p>qxx大傻子</p>
+
+<body><script src="/demos/googlegg.js"></script>
+
+<!-- 
+This game is on iOS and Android "Infinity Loop"
+I loved the concept ant wanted to see if I could make it in jQuery 
+-->
+
+<div id="toolbar"><span id="theme">关灯</span><span class="toggleCreateLevel"> 难度</span> </div>
+<div class="level1" data-code="1231243" data-set="e1.b.c2.c3.c1.s2.c4.e2" data-text="Rotation Game <br><span>Click a block to complete the pipe.</span>"></div>
+<div class="level2" data-code="2323114311231414" data-set="c1.c2.c4.c1.s2.c3.c1.e1.s1.e2.c1.c3.c4.c1.c2.c3"></div>
+<div class="level3" data-code="42232324114122322243" data-set="e2.s1.s2.c2.c2.c1.c1.c1.s2.c2.c2.b.c2.s2.s2.c1.c1.s1.s1.c1.e2.b.b.b"></div>
+<div class="level4" data-code="2222423124111111414" data-set="b.c1.s1.e1.c1.c1.c1.c2.s2.c2.c2.s2.s2.s1.e2.s1.c2.c1.c2.c2"></div>
+<div class="level5" data-code="222314311113443" data-set="c2.s1.s2.c1.s2.e1.c1.s1.s1.b.s2.s2.e1.e1.c1.e1" data-text="Multiple pipes."></div>
+<div class="level6" data-code="112413123111111414" data-set="b.e1.e2.b.c2.c1.c1.c1.s1.c1.c1.s2.s1.s2.s2.s1.c2.c1.c1.c2"></div>
+<div class="level7" data-code="2323141423231414" data-set="c4.c1.c3.c1.c2.c3.c4.c1.c2.c1.c3.c2.c1.c1.c2.c1" data-text="Circles."></div>
+<div class="level8" data-code="222312242211314311143" data-set="c4.s1.s1.c1.c2.s2.s2.c1.b.c2.e3.e4.b.c2.c1.s2.e3.c2.s2.s1.b.c1.c2.e1"></div>
+<div class="level9" data-code="222244312241123132414" data-set="b.c1.s1.e2.c2.c2.e1.c2.s1.c2.s2.c1.s1.c1.s1.c2.c1.c2.c2.c2.b.c2.c1.b"></div>
+<div class="level10" data-code="122311241413422423311231223" data-set="e1.c2.s1.c4.s1.s2.c1.c3.c1.c3.c2.c4.e2.e4.c3.c2.c4.c2.e4.b.s1.c3.s2.c4.c1.s1.e2.e3"></div>
+<div class="level11" data-code="432224131431121122331222" data-set="e1.c2.c1.e1.c1.c1.c1.c1.s1.e1.c2.s1.c1.e2.s2.s2.c1.e1.e1.e1.c2.s1.s2.e1"></div>
+<div class="level12" data-code="42232224122311113441222" data-set="e2.s1.s2.c1.c2.s2.s1.c2.s2.c1.s2.c2.s1.s2.b.s2.s2.e2.e2.c1.c1.s2.s2.e1"></div>
+<div class="level13" data-code="2221223144422231241424" data-set="c1.s1.e1.b.s2.c1.s2.c1.c1.c1.e2.c2.c1.e2.c1.c2.c2.s2.c2.s2.b.e1.s2.c1"></div>
+<div class="level14" data-code="1231141442314314442333" data-set="e1.c2.c1.e2.c1.c2.c2.c2.e1.s2.c2.e1.e1.c1.c2.c1.e1.c2.c2.c2.b.b.e1.e2"></div>
+<div class="level15" data-code="1223113112434323111111411224" data-set="e1.c2.s1.c2.s2.c1.c1.s2.c2.s2.c1.e1.e1.c1.c2.c1.e1.s1.s2.s2.s1.c1.c1.s2.c1.s2.s2.c1"></div>
+<div class="level16" data-code="422122243123241112414224" data-set="e2.s1.e2.e1.c1.s1.s1.c2.e2.e2.c2.c1.c1.c2.s1.s2.c1.s1.c1.s2.e1.s1.s2.c1"></div>
+<div id="win">
+  <div class="text">Level <span>1</span> Complete</div>
+</div>
+<div id="finished">
+  <div class="text">Game Completed!</div>
+</div>
+<div id="createLevel">
+  <div class="newLevel"></div>
+  <div class="stats"></div>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
 </body>
 </html>
